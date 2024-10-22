@@ -1,0 +1,64 @@
+.section_error{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.err-div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.four-o-four-text {
+  position: absolute;
+  top: 2%;
+  font-size: 140px;
+  color: #39ad31;
+}
+
+.err-figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.err-figure img{
+  width: 100%;
+}
+
+.err-text {
+  position: absolute;
+  bottom: 18%;
+  text-align: center;
+  color: #242424;
+}
+
+.back-btn {
+  background-color: #39ad31;
+  color: #fff;
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.err-text button{
+  background-color: transparent;
+  border: 2px solid #ccc;
+  padding: 15px 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media (max-width: 578px) {
+  .four-o-four-text{
+    font-size: 100px;
+  }
+}

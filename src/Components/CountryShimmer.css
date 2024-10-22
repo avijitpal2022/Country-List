@@ -1,0 +1,48 @@
+:root{
+  --shimmer-bg: #faf9f6;
+  --shimmer-secondary-bg: #ccc;
+}
+
+.shimmer-flag.dark, .div1.dark, .paragraph_divs div.dark, .last_div.dark, .shimmer_button.dark{
+  --shimmer-secondary-bg: #445869;
+}
+
+.shimmer-flag {
+  width: 100%;
+  max-width: 450px;
+  height: 350px;
+  background-color: var(--shimmer-secondary-bg);
+  border: none;
+}
+
+.div1 {
+  background-color: var(--shimmer-secondary-bg);
+  width: 350px;
+  height: 50px;
+}
+
+.paragraph_divs div {
+  display: block !important;
+  margin: 0 !important;
+  width: 100%;
+  max-width: 500px;
+  height: 30px;
+  background-color: var(--shimmer-secondary-bg);
+}
+
+.last_div {
+  background-color: var(--shimmer-secondary-bg);
+  width: 45%;
+  height: 40px;
+}
+
+.country_shimmer_data div {
+  border-radius: 5px;
+}
+
+.shimmer_button {
+  width: 90px;
+  height: 45px;
+  background-color: var(--shimmer-secondary-bg);
+  border-radius: 5px;
+}

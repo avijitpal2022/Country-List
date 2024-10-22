@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #faf9f6;
+  transition: background-color 0.3s ease-in-out;
+  --background-color: #faf9f6;
+  --text-color: #242424;
+  --elements-color: #faf9f6;
+}
+
+main,
+.header-container,
+header {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+main.dark,
+.header-container.dark {
+  --background-color: hsl(207, 26%, 17%);
+  --text-color: white;
+  --elements-color: hsl(209, 23%, 22%);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  max-width: 1320px;
+  margin: 0px auto;
+}
+
+a {
+  color: inherit;
+  text-decoration-line: none;
+}
+
+.header-container {
+  position: relative;
+  width: 100%;
+  box-shadow: 0 0 8px #0003;
+  z-index: 1;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_brand {
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.dark_light--mode {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 0px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dark_light--mode span {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.country_card {
+  display: flex;
+  background-color: var(--elements-color);
+  flex-direction: column;
+  width: 100%;
+  /* max-width: 320px; */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 8px #0003;
+  transition: transform 0.3s ease-in-out;
+}
+
+.all_country_cards {
+  margin-top: 40px;
+  padding: 0 20px;
+  max-width: 1320px;
+  margin: 0px auto;
+}
+
+.grid-col-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  place-items: center;
+  place-content: center;
+  gap: 30px;
+  row-gap: 90px;
+}
+
+.country_card:hover {
+  transform: scale(1.05);
+}
+
+.country_flag {
+  width: 100%;
+  height: 212px;
+}
+
+.country_flag img {
+  width: 100%;
+  height: 212px;
+  object-fit: fill;
+}
+
+.country_content {
+  height: 100%;
+  padding: 20px 20px 25px;
+}
+
+.country_content .country_details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.country_content b {
+  font-weight: 500;
+}
+
+.country_name {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.search-and-filter {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1320px;
+  margin: 0px auto;
+}
+
+.search-div {
+  background-color: var(--elements-color);
+  border-radius: 5px;
+  box-shadow: 0 0 8px #00000026;
+  padding: 10px 20px;
+  width: 300px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-div p {
+  display: flex;
+  font-size: 20px;
+}
+
+.search-div input {
+  outline: none;
+  font-size: 16px;
+  background-color: transparent;
+  height: auto;
+  width: 100%;
+  border: none;
+  color: var(--text-color);
+}
+
+.filter-div {
+  background-color: var(--elements-color);
+  border-radius: 5px;
+  box-shadow: 0 0 8px #00000026;
+  padding: 10px 20px;
+  width: 300px;
+}
+
+.filter-div select {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: var(--elements-color);
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+
+@media (max-width: 578px) {
+  .grid-col-4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .country_card {
+    max-width: 320px;
+  }
+
+  .search-and-filter{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  .search-div{
+    width: 100%;
+  }
+
+  .filter-div{
+    width: 100%;
+  }
+  .filter-div select{
+    width: 100%;
+  }
+
+  .nav_brand{
+    font-size: 20px;
+  }
+
+  .dark_light--mode{
+    font-size: 14px;
+  }
+
+  .dark_light--mode span{
+    font-size: 16px;
+  }
+  
+}
