@@ -78,7 +78,7 @@ export const Country = () => {
           }}
         >
           <NavLink
-            to={"/"}
+            to={"/country-list/"}
             style={{ textDecoration: "none", color: "#242424" }}
             className={`${theme === "light" ? "text-dark" : "text-light"}`}
           >
@@ -170,7 +170,7 @@ export const Country = () => {
                     <NavLink
                       className={`border_country ${toggleTheme()}`}
                       key={borderName}
-                      to={`/${borderName}`}
+                      to={`/country-list/${borderName}`}
                     >
                       {borderName}
                     </NavLink>

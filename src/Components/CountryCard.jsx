@@ -11,7 +11,7 @@ export const CountryCard = ({ curCountry, name }) => {
       className={`country_card ${
         theme === "light" ? "text-dark" : "text-light"
       }`}
-      to={`/${name}`}
+      to={`/country-list/${name}`}
     >
       <div className="country_flag">
         <img src={flags.png} alt="" />

@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {  createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import { AppLayout } from './Components/AppLayout';
 import { CountryList } from './pages/CountryList';
@@ -13,17 +13,17 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/country-list/",
       element: <AppLayout/>,
       errorElement: <ErrorPage/>,
       children: [
         {
-          path: "/",
+          path: "/country-list/",
           element: <CountryList/>,
           loader: getApiData,
         },
         {
-          path: "/:country",
+          path: "/country-list/:country",
           element: <Country/>,
           loader: getCountryDetails,
         }
